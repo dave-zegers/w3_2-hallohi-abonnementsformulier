@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h2>Voornaam</h2>
+        <input type="text" name="voornaam" id="voornaam" pattern="[A-Za-z ]{}" required>
+        <h2>Tussenvoegsel</h2>
+        <input type="text" name="tussenvoegsel" id="tussenvoegsel" pattern="[A-Za-z ]{}">
+        <h2>Achternaam</h2>
+        <input type="text" name="achternaam" id="achternaam" pattern="[A-Za-z ]{}" required>
+        <h2>Aanhef</h2>
+        <input type="radio" name="gender" id="gender" value="Dhr." checked>
+        <label for="gender">Dhr.</label><br>
+        <input type="radio" name="gender" id="gender" value="Mevr.">
+        <label for="gender">Mevr.</label><br>
+        <input type="radio" name="gender" id="gender" value="Anders">
+        <label for="gender">Anders</label><br>
+        <h2>Straatnaam & huisnummer</h2>
+        <input type="text" name="straat" id="straat" required>
+        <h2>postcode</h2>
+        <input type="text" name="postcode" id="postcode" pattern="[0-9]{4}[A-Za-z]{2}" placeholder="1234AB" required>
+        <h2>woonplaats</h2>
+        <input type="text" name="woonplaats" id="woonplaats" required>
+        <h2>land</h2>
+        <input type="text" name="land" id="land" required>
+        <h2>iban</h2>
+        <input type="text" name="iban" id="iban" pattern="NL[0-9]{2}[A-Z0-9]{4}[0-9]{7}([A-Z0-9]?){0,16}" placeholder="NL00BANK0123456789" required>
+        <h2>Keuze abonnement</h2>
+        <input type="radio" name="mobiel" id="mobiel" value="mobiel" checked>
+        <label for="mobiel">Mobiel</label><br>
+        <input type="radio" name="glasvezel" id="glasvezel" value="glasvezel">
+        <label for="glasvezel">Glasvezel</label><br>
+        <input type="radio" name="tv" id="tv" value="tv">   
+        <label for="tv">TV</label><br>
+        <h2>Datum van ingang</h2>
+        <input type="date" name="datum" id="datum" required>
+        <h2>Looptijd abbonement in maanden</h2>
+        <input type="number" name="looptijd" id="looptijd" min="1" max="12" required>
+        <h2>aantal gebruikers</h2>
+        <input type="number" name="gebruikers" id="gebruikers" min="1" max="4" required>
+        <h2>Email</h2>
+        <input type="email" name="email" id="email" required>
+        <h2>wachtwoord aanmaken</h2>
+        <input type="password" name="wachtwoord" id="wachtwoord" required>
+        <h2>Bevestig wachtwoord</h2>
+        <input type="password" name="bevestig_wachtwoord" id="bevestig_wachtwoord" required><br>
+        <input type="submit" value="Verzenden">
+    </form>
+</body>
+</html>
